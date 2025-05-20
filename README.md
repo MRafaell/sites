@@ -106,3 +106,43 @@ public class MultaVelocidade {
      
     }
 }
+
+
+
+
+-----------------------------------------
+
+outro metodo 
+
+
+import java.util.Scanner;
+
+public class MultaVelocidade {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+
+        System.out.print("Digite a velocidade: ");
+        int velocidade = teclado.nextInt();
+
+        int multa;
+
+        if ( velocidade <= 40) {
+            multa = 00;
+        } else
+        if ( velocidade <= 60) {
+            multa = 50;
+        } else
+        if ( velocidade <= 80) {
+            multa = 100;
+        } 
+        else if (velocidade <= 100) {
+            multa = 200;
+        } else {
+            multa = 00; 
+        }
+
+        System.out.println("Valor da multa: R$ " + multa);
+        
+     
+    }
+}
