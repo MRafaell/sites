@@ -146,3 +146,36 @@ public class MultaVelocidade {
      
     }
 }
+
+
+
+
+---------------------------
+
+
+
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner teclado = new Scanner(System.in);
+        
+    
+    
+    int maiorSalario = 0;
+    int salarioAlto = 0;
+        
+    System.out.print("pessoa 1 \n digite o salario: ");
+    int salario = teclado.nextInt();
+    System.out.print("informe a quantidade de filhos: ");
+    int filhos = teclado.nextInt();
+     System.out.print("informe a quantidade de filhos: ");
+    int filhos = teclado.nextInt();
+        
+        
+    }
+}
+
