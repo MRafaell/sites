@@ -6,11 +6,13 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner teclado = new Scanner(System.in);
+        
         int n1 = 0;
         int somatorio = 0;
         int maior = 0;
         int contador = 1;
         int menor = 1000000;
+        
         while (contador<=10){
             System.out.print("digite o numero "+ contador + ": ");
             n1 = teclado.nextInt();
