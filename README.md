@@ -72,3 +72,37 @@ class Main {
         }
     }
 }
+
+
+
+--------------------
+mesmo cod mas diferente 
+
+import java.util.Scanner;
+
+public class MultaVelocidade {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Digite a velocidade: ");
+        int velocidade = scanner.nextInt();
+
+        int multa;
+
+        if (velocidade >= 0 && velocidade <= 40) {
+            multa = 0;
+        } else if (velocidade <= 60) {
+            multa = 10;
+        } else if (velocidade <= 80) {
+            multa = 20;
+        } else if (velocidade <= 100) {
+            multa = 30;
+        } else {
+            multa = 50; // Exemplo: multa maior se passar de 100 km/h
+        }
+
+        System.out.println("Valor da multa: R$ " + multa);
+        
+        scanner.close();
+    }
+}
