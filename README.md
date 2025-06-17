@@ -179,3 +179,120 @@ class Main {
     }
 }
 
+
+
+-------------------------------------------------------------------------
+
+
+urna com contagem de votos ate 10
+
+
+import java.util.Scanner;
+public class Urna {
+
+	public static void main (String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		int candA = 0;
+		int candB = 0;
+		int candC = 0;
+		int candD = 0;
+		
+		System.out.println("escolha seu candidato !");
+		System.out.println("para o candidato A digite 1");
+		System.out.println("para o candidato B digite 2");
+		System.out.println("para o candidato C digite 3");
+		System.out.println("para o candidato D digite 4");
+		
+		
+		int c = 0;
+		
+		
+		while (c<=10) {
+		    System.out.println("escohla o candidato");
+		    int escolha = teclado.nextInt();
+		    
+		if (escolha==1) {
+			candA+=1;
+		} else if (escolha==2) {
+			candB+=1;
+		} else if (escolha==3) {
+			candC+=1;
+		} else if (escolha==4) {
+			candD+=1;
+		} else {
+		    System.out.print("nenhum voto debitado !");
+		}
+		 c++;
+		}
+		
+		System.out.println("votos do A: "+ candA);
+		System.out.println("votos do B: "+ candB);
+		System.out.println("votos do C: "+ candC);
+		System.out.println("votos do D: "+ candD);
+		
+		
+		
+	}
+	
+}
+
+
+--------------------------------------------------------------------
+
+urna eletronica com um botao para encerrar ! fiz para encerrar pressionando 5 
+
+import java.util.Scanner;
+public class Urna {
+
+	public static void main (String[] args) {
+		
+		Scanner teclado = new Scanner(System.in);
+		
+		int candA = 0;
+		int candB = 0;
+		int candC = 0;
+		int candD = 0;
+
+		int escolha = 0;
+		
+		while (escolha!=5) {
+		System.out.println("escolha seu candidato !");
+		System.out.println("para o candidato A digite 1");
+		System.out.println("para o candidato B digite 2");
+		System.out.println("para o candidato C digite 3");
+		System.out.println("para o candidato D digite 4");
+  
+		     escolha = teclado.nextInt();
+		    
+		if (escolha==1) {
+			candA+=1;
+		} else if (escolha==2) {
+			candB+=1;
+		} else if (escolha==3) {
+			candC+=1;
+		} else if (escolha==4) {
+			candD+=1;
+		} 
+		
+		
+		}
+		
+		System.out.println("votos do A: "+ candA);
+		System.out.println("votos do B: "+ candB);
+		System.out.println("votos do C: "+ candC);
+		System.out.println("votos do D: "+ candD);
+	
+	}
+	
+}
+
+
+------------------------------------------------------------------
+
+
+
+
+
+
