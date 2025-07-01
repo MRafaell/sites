@@ -1,0 +1,130 @@
+body {
+    background-image: url("../img/imgbody.webp");
+    background-size: cover;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(142, 203, 214);
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+   
+}
+
+
+
+img {
+
+    margin-left: 35px;
+
+
+}
+
+
+
+
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+
+li {
+    padding: 20px;
+    font-size: 30px;
+    list-style: none;
+    
+    
+}
+
+
+a {
+    text-decoration: none;
+    color: rgb(0, 97, 37);
+    
+}
+
+
+#contato{
+    border: none ;
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    
+}
+
+
+
+#contato:hover {
+    background-color: rgb(0, 247, 255);
+    transition: 0.4s;
+   
+}
+
+
+main {
+    display: flex;
+    justify-content: left;
+    margin-top: 250px;
+    margin-left: 100px;
+    
+    
+}
+
+
+
+
+
+
+
+
+.corpo {
+    border: solid;
+    border: none;
+    background-color: bisque;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    margin-left: 100px;
+    
+    
+
+}
+
+
+.espac {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    
+}
+
+
+.img2 {
+    height: 400px;
+    border: solid;
+    border-radius: 10px;
+    margin-left: 300px;
+    border: none;
+   
+}
+
+
+
+#resetar {
+    background-color: white;
+}
+
+#resetar:hover {
+    background-color: darkmagenta;
+}
