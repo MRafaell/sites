@@ -1,0 +1,148 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url(../tela-fundo.avif);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container com layout em grid */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Logo ou imagem da loja */
+.container > div:first-child {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 10px;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(189, 179, 161, 0.644);
+}
+
+/* Menu de navegação (lei de Jakob + proximidade) */
+.container > div:nth-child(2) {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.container > div:nth-child(2) a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: bold;
+    position: relative;
+}
+
+.container > div:nth-child(2) a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0077cc;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.container > div:nth-child(2) a:hover::after {
+    width: 100%;
+}
+
+/* Lista de produtos (categoria lateral) */
+.container > div:nth-child(3) {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container > div:nth-child(3) h2 {
+    width: 100%;
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.container > div:nth-child(3) a {
+    text-decoration: none;
+    color: #444;
+    background-color: #eaeaea;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.container > div:nth-child(3) a:hover {
+    background-color: #ccc;
+}
+
+/* Produto individual */
+.container > div:nth-child(n+4) {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.container > div:nth-child(n+4):hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.container > div:nth-child(n+4) img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Botões (Lei de Fitts + Hierarquia Visual) */
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
